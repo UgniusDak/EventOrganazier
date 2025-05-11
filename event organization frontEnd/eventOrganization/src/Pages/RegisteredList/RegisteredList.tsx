@@ -138,47 +138,51 @@ export default function RegisteredList() {
             />
             <FaSearch />
           </div>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Name:</th>
-                <th>Last Name:</th>
-                <th>Email:</th>
-                <th>Year Of birth:</th>
-                <th>Actions:</th>
-              </tr>
-            </thead>
-            {filteredUser.map((user) => {
-              return (
-                <tbody key={user._id}>
-                  <tr>
-                    <td>{user.name}</td>
-                    <td>{user.lastName}</td>
-                    <td>{user.email}</td>
-                    <td>
-                      {user.birthDate
-                        ? user.birthDate.slice(0, 10)
-                        : user.birthDate}
-                    </td>
-                    <td className={styles.buttonTableData}>
-                      <button
-                        onClick={() => editHandler(user._id)}
-                        className={styles.edit}
-                      >
-                        <FaEdit />
-                      </button>
-                      <button
-                        onClick={() => handleDelete(user._id)}
-                        className={styles.delete}
-                      >
-                        <FaTrashAlt />
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              );
-            })}
-          </table>
+          {filteredUser.length > 0 ? (
+            <table className={styles.table}>
+              <thead>
+                <tr>
+                  <th>Name:</th>
+                  <th>Last Name:</th>
+                  <th>Email:</th>
+                  <th>Year Of birth:</th>
+                  <th>Actions:</th>
+                </tr>
+              </thead>
+              {filteredUser.map((user) => {
+                return (
+                  <tbody key={user._id}>
+                    <tr>
+                      <td>{user.name}</td>
+                      <td>{user.lastName}</td>
+                      <td>{user.email}</td>
+                      <td>
+                        {user.birthDate
+                          ? user.birthDate.slice(0, 10)
+                          : user.birthDate}
+                      </td>
+                      <td className={styles.buttonTableData}>
+                        <button
+                          onClick={() => editHandler(user._id)}
+                          className={styles.edit}
+                        >
+                          <FaEdit />
+                        </button>
+                        <button
+                          onClick={() => handleDelete(user._id)}
+                          className={styles.delete}
+                        >
+                          <FaTrashAlt />
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                );
+              })}
+            </table>
+          ) : (
+            <p>No users found.</p>
+          )}
         </div>
       ) : (
         <div className={styles.editUserContainer}>
