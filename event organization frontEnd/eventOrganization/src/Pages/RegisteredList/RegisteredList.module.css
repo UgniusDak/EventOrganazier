@@ -1,0 +1,148 @@
+p {
+  font-size: 30px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+hr {
+  border: 1px solid black;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.search input {
+  padding: 0.4rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-right: 0.5rem;
+}
+
+.table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0.5rem auto;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.table td,
+.table th {
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+.table th {
+  background-color: rgb(232, 229, 229);
+}
+
+.edit {
+  background-color: rgb(146, 207, 54);
+}
+
+.edit:hover {
+  background-color: rgb(2, 178, 2);
+}
+
+.delete {
+  background-color: rgb(244, 52, 52);
+}
+
+.delete:hover {
+  background-color: rgb(212, 3, 3);
+}
+
+.table button {
+  padding: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+/* --------------------------------------------------------- */
+
+.editUserContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.editUserContainer h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.editUserContainer hr {
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.editUserForm {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 60%;
+  margin: auto;
+  border: 2px solid black;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: rgb(232, 229, 229);
+}
+
+.editUserForm label {
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.editUserForm input {
+  padding: 1rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.editUserForm button {
+  width: 50%;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1rem;
+  border: none;
+  background-color: #aad961;
+  margin-bottom: 0;
+  font-family: cursive;
+  font-size: 15px;
+  margin-top: 1rem;
+}
+
+.editUserForm button:hover {
+  background-color: #aaf042;
+}
+
+.errorMessage {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(255, 0, 0);
+}

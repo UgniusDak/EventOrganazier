@@ -1,0 +1,46 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.headerContainer img {
+  height: 200px;
+}
+
+.headerInfo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.phoneNumber {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.5rem;
+}
+
+section {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  gap: 4rem;
+}
+
+section a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
